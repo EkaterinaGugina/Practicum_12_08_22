@@ -1,14 +1,14 @@
-﻿// Программа, которая на вход принимает два числа и выдаёт, является ли второе кратным первому, а если нет выдает остаток от деления первого на второе.
-Console.WriteLine("Введите два числа, и мы выведем кратно ли второе первому");
-Console.Write("number1 =");
-int number1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("number2 =");
-int number2 = Convert.ToInt32(Console.ReadLine());
-if (number1 % number2 == 0)
-    {
-     Console.Write($"Число {number1} кратно числу {number2}");
-    }
-else
-    {
-    Console.Write($"Числа не кратны, и остаток от деления {number1} на {number2} равен {number1 % number2}"); 
-    }   
+﻿// Программа, которая принимает на вход координаты двух точек и выдаёт расстояние между ними
+Console.Write("Введите координаты двух точек ");
+Console.Write("x_a =");
+int x_a = Convert.ToInt32(Console.ReadLine());
+Console.Write("y_a =");
+int y_a = Convert.ToInt32(Console.ReadLine());
+Console.Write("x_b =");
+int x_b = Convert.ToInt32(Console.ReadLine());
+Console.Write("y_b =");
+int y_b = Convert.ToInt32(Console.ReadLine());
+
+double r = Math.Sqrt(Math.Pow((x_a - x_b), 2) + Math.Pow((y_a - y_b), 2));
+
+Console.Write($"Расстояние между этими точками равно  {Math.Round(r, 2)}");
