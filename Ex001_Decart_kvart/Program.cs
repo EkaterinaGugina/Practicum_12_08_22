@@ -11,17 +11,17 @@ if (x_a == 0 || y_a == 0)
 }
 if (x_a > 0 && y_a > 0)
      {
-        Console.WritLine("1 четверть");
+        Console.WriteLine("1 четверть");
      }
 if (x_a > 0 && y_a < 0)
      {
-        Console.WritLine("4 четверть");
+        Console.WriteLine("4 четверть");
      }  
 if (x_a < 0 && y_a > 0)
      {
-        Console.WritLine("2 четверть";
+        Console.WriteLine("2 четверть");
      }
 if (x_a < 0 && y_a < 0)
      {
-        Console.WritLine("3 четверть");
+        Console.WriteLine("3 четверть");
      }
