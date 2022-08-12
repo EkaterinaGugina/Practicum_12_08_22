@@ -1,12 +1,10 @@
-﻿// Программа, которая на вход принимает число (N), а на выходе пишет, кратно ли оно 7 и одновременно 23.
-Console.WriteLine("Введите целое число, и мы выведем кратно ли оно 7 и одновременно 23.");
-Console.Write("number =");
+﻿// Программа, которая на вход принимает число (N), а на выходе - квадраты чисел от 1 до N.
+Console.Write("Введите целое число  ");
 int number = Convert.ToInt32(Console.ReadLine());
-if ((number % 7 == 0) && (number % 23 == 0))
+int i = 1;                                      // счетчик цкла
+
+while (i <= number)
 {
-    Console.WriteLine($"Число {number} кратно 7 и 23 одновременно.");
-}
-else 
-{
-    Console.WriteLine($"Число {number} им одновременно не кратно");
+    Console.Write($"  {Math.Pow(i, 2)}");
+    i++;
 }
